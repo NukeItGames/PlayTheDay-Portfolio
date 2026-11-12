@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "PlayTheDay",
+    "slug": "playtheday",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "primaryColor": "#7854e8",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow PlayTheDay to check your location only when you request nearby activities or a quest check-in."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Choose an adventure photo to save only on your device.",
+          "cameraPermission": "Take an adventure photo to save only on your device.",
+          "microphonePermission": false
+        }
+      ],
+      "expo-font",
+      "expo-status-bar"
+    ],
+    "scheme": "playtheday"
+  }
+}

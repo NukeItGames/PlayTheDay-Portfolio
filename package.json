@@ -1,0 +1,62 @@
+{
+  "name": "playtheday",
+  "version": "1.0.0",
+  "main": "expo-router/entry",
+  "dependencies": {
+    "@expo/vector-icons": "^15.0.2",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "cheerio": "^1.2.0",
+    "expo": "~57.0.31",
+    "expo-constants": "~57.0.22",
+    "expo-file-system": "~57.0.7",
+    "expo-font": "~57.0.4",
+    "expo-image-picker": "~57.0.21",
+    "expo-linear-gradient": "~57.0.2",
+    "expo-linking": "~57.0.14",
+    "expo-location": "~57.0.23",
+    "expo-router": "~57.0.31",
+    "expo-status-bar": "~57.0.1",
+    "fast-xml-parser": "^5.11.2",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-screens": "~4.26.0",
+    "react-native-web": "^0.21.4",
+    "react-native-webview": "13.16.1",
+    "robots-parser": "^3.0.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/react": "~19.2.4",
+    "eslint": "^9.39.5",
+    "eslint-config-expo": "~57.0.2",
+    "prettier": "^3.9.10",
+    "tsx": "^4.23.15",
+    "typescript": "~6.0.3"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "tsx --test tests/*.test.ts tests/*.test.mjs",
+    "test:e2e": "playwright test",
+    "events:refresh": "node scripts/ingest-events.mjs",
+    "export:web": "expo export --platform web",
+    "check:expo": "expo install --check",
+    "preview:web": "node scripts/serve-web.mjs"
+  },
+  "private": true,
+  "overrides": {
+    "decode-uri-component": "^0.5.1",
+    "minimatch@>=7 <11": "^11.0.8"
+  },
+  "description": "A local-first adventure RPG built with React Native, TypeScript and Expo.",
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}
